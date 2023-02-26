@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'title';
+  src: url(../font/anastasiascriptc.otf);
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px 50px 0 0;
+  padding: 21px 0;
+}
+.title {
+  font-family: 'title';
+  color: #5F815C;
+  text-align: center;
+}
+h1.title {
+  font-size: 72px;
+}
+h2.title {
+  font-size: 32px;
+}
+.title-dark { 
+  font-family: 'title';
+  text-align: center;
+  color: white;
+}
+h2.title-dark {
+  font-size: 32px;
+}
+p.text {
+  font-size: 14px;
+  color: #5F815C;
+  text-align: center;
+  line-height: 20px;
+}
+p.text-dark {
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bg {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+.bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__title {
+  position: relative;
+}
+.main__title h3 {
+  font-size: 72px;
+  color: #5f815c79;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__text {
+  text-align: center;
+}
+.main__text h2 {
+  margin-top: 13px;
+}
+.main__text p {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.time__text {
+  padding-top: 63px;
+}
+.time__title {
+  padding-top: 42px;
+}
+
+.time-and-address {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin-top: 42px;
+  line-height: 30px;
+}
+.time-and-address::before {
+  content: '';
+  width: 1px;
+  height: 21px;
+  background-color: white;
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+.dress__title {
+  margin-top: 42px;
+}
+.dress__text {
+  color: white;
+  font-size: 16px;
+  margin-top: 21px;
+  text-align: center;
+}
+.poz__title {
+  margin-top: 42px;
+}
+.poz__text p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 21px;
+  line-height: 22px;
+}
+.anketa__title {
+  padding-top: 42px;
+}
