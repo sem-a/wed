@@ -89,7 +89,103 @@
           <div class="anketa__title">
             <h2 class="title-dark">Анкета</h2>
           </div>
-          .
+          <form action="#" class="form">
+            <div class="form__item">
+              <input
+                type="text"
+                placeholder="Имя/Имена"
+                id="name"
+                name="name"
+                class="form__input"
+              />
+            </div>
+            <div class="form__item form__padding">
+              <p class="home">Планируете присутствовать?</p>
+              <div class="radio">
+                <div class="radio__item">
+                  <input
+                    type="radio"
+                    value="да, с радостью"
+                    name="prisut"
+                    id="yes"
+                    class="form__radio"
+                    checked
+                  />
+                  <label for="yes">Да, с радостью</label>
+                </div>
+                <div class="radio__item">
+                  <input
+                    type="radio"
+                    value="к сожалению, нет"
+                    name="prisut"
+                    id="no"
+                    class="form__radio"
+                  />
+                  <label for="no">К сожалению, нет</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__padding">
+              <p class="home">После банкета вам будет предложено остаться в доме на ночь, хотите ли вы остаться?</p>
+              <div class="radio">
+                <div class="radio__item">
+                  <input type="radio" name='home' id="yesHome" value="да" checked class="form__radio">
+                  <label for="yesHome">Да</label>
+                </div>
+                <div class="radio__item">
+                  <input type="radio" name='home' id="noHome" value="нет" class="form__radio">
+                  <label for="noHome">Нет</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__padding">
+              <p class="home">На чем предпочитаете добираться до места банкета?</p>
+              <div class="radio">
+                <div class="radio__item">
+                  <input type="radio" name='auto' id="youAuto" value="свой транспорт" checked class="form__radio">
+                  <label for="youAuto">Свой транспорт</label>
+                </div>
+                <div class="radio__item">
+                  <input type="radio" name='auto' id="ourAuto" value="наш транспорт" class="form__radio">
+                  <label for="ourAuto">Наш транспорт</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__padding">
+              <p class="home">Будете ли вы с детьми младше 10 лет?</p>
+              <div class="radio">
+                <div class="radio__item">
+                  <input type="radio" name='child' id="yesChild" value="да" checked class="form__radio">
+                  <label for="yesChild">Да</label>
+                </div>
+                <div class="radio__item">
+                  <input type="radio" name='child' id="noChild" value="нет" class="form__radio">
+                  <label for="noChild">Нет</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <p class="home form__padding">Не забудьте указать аллергию, если она у вас есть</p>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__input"
+              />
+            </div>
+            <div class="form__item">
+              <input
+                type="submit"
+                id="name"
+                name="name"
+                placeholder="ОТПРАВИТЬ"
+                class="form__submit"
+              />
+            </div>
+          </form>
+          <div class="bottom__text">
+            <h2 class="title-dark">С нетерпением ждем вас!</h2>
+          </div>
         </div>
       </div>
     </section>

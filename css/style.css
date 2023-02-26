@@ -7,10 +7,14 @@ body {
   font-family: 'Poiret One', cursive;
 }
 
-.dark {
+section.dark {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50px 50px 0 0;
-  padding: 21px 0;
+  display: inline-block;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+  padding-bottom: 105px;
 }
 .title {
   font-family: 'title';
@@ -57,11 +61,11 @@ p.text-dark {
   width: 100%;
 }
 .bg img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
-section {
+section.main {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -141,4 +145,80 @@ section {
 }
 .anketa__title {
   padding-top: 42px;
+}
+
+.form__item {
+  margin-top: 21px;
+}
+p.home {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+label {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+input.form__radio {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label::before {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  box-shadow: #4431336c 0px 0px 2px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+label::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #CDB186;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transform: scale(0);
+  transition: transform 0.2s ease 0s;
+}
+.form__radio:checked + label::after {
+  transform: scale(1);
+  transition: transform 0.2s ease 0s;
+}
+.form__padding {
+  padding: 0px 3px;
+}
+input.form__input {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #5F815C;
+  padding: 13px 21px;
+}
+.radio {
+  padding-top: 7px;
+}
+.radio__item {
+  margin-top: 13px;
+}
+.form__submit {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #5F815C;
+  padding: 13px 21px;
+}
+
+.bottom__text {
+  margin-top: 63px;
 }
